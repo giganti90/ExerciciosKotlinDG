@@ -9,7 +9,7 @@ class Conta (val numeroConta: Int, var saldo: Double, val titular: Cliente) {
         }
     }
 
-    fun saque (valor: Double) {
+    fun saque(valor: Double) {
         if (valor <= saldo) {
             saldo -= valor
             println("saque efetivado")

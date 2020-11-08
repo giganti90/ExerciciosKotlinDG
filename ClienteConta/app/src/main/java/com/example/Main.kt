@@ -3,9 +3,8 @@ package com.example
 import com.example.clientesecontas.Cliente
 import com.example.clientesecontas.Conta
 
-fun main () {
-
-    val cliente1 : Cliente = Cliente("Valeria", "Serra")
+fun main() {
+    val cliente1 = Cliente("Valeria", "Serra")
     val conta1 : Conta = Conta(2, 100.0, cliente1)
     conta1.deposito(100.0)
 
@@ -15,4 +14,3 @@ fun main () {
     conta2.deposito(200.0)
 
 }
-
