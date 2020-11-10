@@ -1,11 +1,11 @@
 package com.example.jogotreino.classes
 
 class JogadorDeFutebol(
-        val nome: String,
-        var energia: Int,
-        var alegria: Int,
-        var gols: Int,
-        var experiencia: Int
+    val nome: String,
+    var energia: Int,
+    var alegria: Int,
+    var gols: Int,
+    var experiencia: Int
     ) {
 
         fun fazerGol() {
