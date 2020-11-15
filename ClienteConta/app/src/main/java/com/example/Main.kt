@@ -2,17 +2,19 @@ package com.example
 
 import com.example.clientesecontas.Cliente
 import com.example.clientesecontas.Conta
+import com.example.clientesecontas.ContaCorrente
+import com.example.clientesecontas.ContaPoupanca
 
 fun main () {
 
-    val cliente1 : Cliente = Cliente("Valeria", "Serra")
-    val conta1 : Conta = Conta(2, 100.0, cliente1)
-    conta1.deposito(100.0)
+    val cliente1 = Cliente("Valeria", "Serra")
+    val contaPoupanca = ContaPoupanca(cliente1, 1, 100.00, titular = cliente1)
+    contaPoupanca.deposito(100.0)
 
 
-    val cliente2 : Cliente = Cliente("Talia", "Giganti")
-    val conta2 : Conta = Conta(3, 500.0, cliente2)
-    conta2.deposito(200.0)
+    val cliente2 = Cliente("Talia", "Giganti")
+    val contaCorrente = ContaCorrente(cliente2, 100.00)
+    contaCorrente.deposito(200.0)
 
 }
 //teste
