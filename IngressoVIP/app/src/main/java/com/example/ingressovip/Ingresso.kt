@@ -1,4 +1,4 @@
 package com.example.ingressovip
 
-class Ingresso {
+class Ingresso(val valor : Double) {
 }
