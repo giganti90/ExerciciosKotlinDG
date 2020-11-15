@@ -2,7 +2,7 @@ package com.example.clientesecontas
 
 abstract class Conta (cliente: Cliente) {
 
-       protected var saldo: Double = 0.0
+       var saldo: Double = 0.0
 
        open fun deposito(valor: Double) {
               if (valor > 0) {
